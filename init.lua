@@ -12,8 +12,9 @@ vim.g.clipboard = {
   },
 }
 
-vim.keymap.set("x", "<C-c>", '"+y', {
-  desc = "Copy to Windows clipboard",
+local copy_key = vim.fn.has("mac") == 1 and "<D-c>" or "<C-c>"
+vim.keymap.set("x", copy_key, '"+y', {
+  desc = "Copy to system clipboard",
 })
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
