@@ -1,5 +1,18 @@
 return {
-  -- Included in the supplied lockfile; select with :colorscheme vscode.
+  -- Default colorscheme, included in the supplied lockfile.
   { "Mofiqul/vscode.nvim", lazy = true },
+  { "tanvirtin/monokai.nvim", lazy = true },
+  {
+    "sainnhe/sonokai",
+    lazy = true,
+    init = function()
+      vim.g.sonokai_style = "maia"
+    end,
+  },
+  {
+    "polirritmico/monokai-nightasty.nvim",
+    lazy = true,
+    opts = { dark_style_background = "dark" },
+  },
   { "LazyVim/LazyVim", opts = { colorscheme = "vscode" } },
 }
