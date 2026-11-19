@@ -1,5 +1,5 @@
 return {
-  -- Default colorscheme, included in the supplied lockfile.
+  -- Additional colorschemes, included in the supplied lockfile.
   { "Mofiqul/vscode.nvim", lazy = true },
   { "tanvirtin/monokai.nvim", lazy = true },
   {
@@ -14,5 +14,5 @@ return {
     lazy = true,
     opts = { dark_style_background = "dark" },
   },
-  { "LazyVim/LazyVim", opts = { colorscheme = "vscode" } },
+  { "LazyVim/LazyVim", opts = { colorscheme = "tokyonight-moon" } },
 }
